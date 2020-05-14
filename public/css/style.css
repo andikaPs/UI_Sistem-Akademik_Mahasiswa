@@ -30,6 +30,7 @@ body {
 .text-warning {
   color: #ECC31F;
 }
+
 .normal {
   font-weight: normal;
   font-size: 21px;
@@ -81,7 +82,7 @@ body {
   margin-left: 9px;
 }
 
-.box-kiri  div.normal {
+.box-kiri div.normal {
   margin-left: 20%;
 }
 
@@ -94,6 +95,7 @@ body {
   color: #ECC31F;
   font-size: 15px;
 }
+
 .box-kanan img {
   width: 450px;
   z-index: -9;
@@ -163,9 +165,11 @@ form label {
   0% {
     opacity: .5;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: .5;
   }
@@ -173,8 +177,14 @@ form label {
 
 /* responsive breakpoint */
 @media screen and (max-width: 576px) {
+
+
   .top {
-    margin-top: 10vh;
+    margin-top: 0;
+  }
+
+  .card {
+    width: 300px;
   }
 
   .box {
@@ -191,7 +201,10 @@ form label {
     margin: 0;
   }
 
-  .box-kiri h2,p,h3, .btn {
+  .box-kiri h2,
+  p,
+  h3,
+  .btn {
     margin: 0 0 15px 0;
   }
 
@@ -208,5 +221,13 @@ form label {
   .box-kanan img {
     margin: 0;
     width: 250px;
+  }
+
+  .form-control {
+    width: 200px;
+    height: 35px;
+    box-sizing: border-box;
+    padding: 5px 15px;
+    margin-bottom: 25px;
   }
 }

@@ -171,7 +171,6 @@ nav {
   justify-content: space-around;
   align-items: center;
   color: #fff;
-  z-index: 9999;
 }
 
 nav .logo {
@@ -220,7 +219,6 @@ nav ul li:hover a {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   margin-bottom: 60px;
-  z-index: -999;
 }
 
 .card-body {
@@ -321,16 +319,8 @@ nav ul li:hover a {
   }
 
 
-
-  .list,
-  .berita,
-  .card {
-    z-index: -2;
-  }
-
   nav {
     align-items: center;
-    z-index: 9;
   }
 
   nav .logo {

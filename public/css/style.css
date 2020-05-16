@@ -3,8 +3,6 @@
   src: url(../font/RobotoCondensed-Regular.ttf) format('truetype');
 }
 
-
-
 * {
   padding: 0;
   margin: 0;
@@ -249,6 +247,55 @@ nav ul li:hover a {
   width: 300px;
 }
 
+/* style for jadwal */
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table tr th {
+  padding: 10px;
+  background-color: #7379D1;
+  color: #fff;
+}
+
+.table tr th:first-child {
+  width: 2%;
+}
+
+.table tr th:nth-child(2) {
+  width: 10%;
+}
+
+.table tr th:nth-child(3) {
+  width: 40%;
+}
+
+.table tr th:nth-child(4) {
+  width: 13%;
+}
+
+.table tr th:nth-child(5) {
+  width: 13%;
+}
+
+.table tr th:nth-child(6) {
+  width: 15%;
+}
+
+.table tr td {
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.table tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, .1);
+}
+
+.table tr:nth-child(even):hover {
+  background-color: rgba(0, 0, 0, 0.048);
+}
+
 /* animation */
 @keyframes opacity {
   0% {
@@ -380,5 +427,9 @@ nav ul li:hover a {
     top: 60px;
     opacity: 1;
     visibility: visible;
+  }
+
+  .card-body {
+    overflow: scroll;
   }
 }

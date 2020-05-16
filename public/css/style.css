@@ -317,6 +317,10 @@ nav ul li:hover a {
     margin-top: -50px;
   }
 
+  .top-28 {
+    margin-top: 80px;
+  }
+
   .panel {
     width: 300px;
   }
@@ -367,7 +371,10 @@ nav ul li:hover a {
 
 
   nav {
+    width: 100%;
+    top: 0;
     align-items: center;
+    position: fixed;
   }
 
   nav .logo {
@@ -430,6 +437,6 @@ nav ul li:hover a {
   }
 
   .card-body {
-    overflow: scroll;
+    overflow: auto;
   }
 }

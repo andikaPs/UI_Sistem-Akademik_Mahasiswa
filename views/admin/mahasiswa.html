@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="dIkaps">
-  <title>Beranda</title>
+  <title>Daftar Mahasiswa</title>
   <link rel="stylesheet" href="../../public/css/style.css">
 </head>
 
@@ -15,7 +15,7 @@
     <h3 class="logo">ubsi</h3>
 
     <ul>
-      <li><a href="beranda.html" class="active">Beranda</a></li>
+      <li><a href="../umum/beranda.html">Beranda</a></li>
       <!-- menu untuk mahasiswa -->
       <!-- <li><a href="../mahasiswa/jadwal.html">Jadwal Kuliah</a></li>
       <li><a href="../mahasiswa/tentang-saya.html">Tentang Saya</a></li> -->
@@ -28,13 +28,14 @@
       <!-- akhir menu dosen -->
 
       <!-- menu admin -->
-      <li><a href="../admin/berita.html">Berita</a></li>
-      <li><a href="../admin/kelas.html">Kelas</a></li>
-      <li><a href="../admin/jurusan.html">Jurusan</a></li>
-      <li><a href="../admin/fakultas.html">Fakultas</a></li>
-      <li><a href="../admin/mahasiswa.html">Mahasiswa</a></li>
-      <li><a href="../admin/dosen.html">Dosen</a></li>
-      <li><a href="../admin/tentang-saya.html">Tentang Saya</a></li>
+      <li><a href="berita.html">Berita</a></li>
+      <li><a href="kelas.html">Kelas</a></li>
+      <li><a href="jurusan.html">Jurusan</a></li>
+      <li><a href="fakultas.html">Fakultas</a></li>
+      <li><a href="mahasiswa.html" class="active">Mahasiswa</a></li>
+      <li><a href="dosen.html">Dosen</a></li>
+      <li><a href="tentang-saya.html">Tentang Saya</a></li>
+      <!-- akhir menu admin -->
     </ul>
 
     <div class="menu-toggle">
@@ -52,38 +53,39 @@
     <div class="card">
       <div class="card-body">
         <h3>Universitas Bina Sarana Informatika</h3>
-        <p>Beranda</p>
+        <p>Mahasiswa</p>
       </div>
     </div>
     <!-- akhir card -->
 
-    <!-- awal list -->
-    <div class="list">
-
-      <div class="berita">
-        <div class="card">
-          <div class="card-body">
-            <h3>Update Jadwal UTS</h3>
-            <p>2020 - 05 - 15</p>
-
-            <a href="baca.html" class="btn top-28">Baca</a>
-          </div>
+    <!-- card untuk daftar berita -->
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <a href="tambah-fakultas.html" class="btn bottom">Tambah</a>
         </div>
+
+        <table class="table">
+          <tr>
+            <th>No</th>
+            <th>Fakultas</th>
+            <th>Aksi</th>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>Teknologi Informasi</td>
+            <td>
+              <div class="row">
+                <a href="edit-fakultas.html" class="btn bg-warning">Edit</a>
+                <a href="#" class="btn bg-danger">Hapus</a>
+              </div>
+            </td>
+          </tr>
+        </table>
       </div>
-      <div class="berita">
-        <div class="card">
-          <div class="card-body">
-            <h3>Update Jadwal UTS</h3>
-            <p>2020 - 05 - 15</p>
-
-            <a href="baca.html" class="btn top-28">Baca</a>
-          </div>
-        </div>
-      </div>
-
-
     </div>
-    <!-- akhir list -->
+    <!-- akhir card daftar berita -->
   </div>
   <!-- akhir container -->
 

@@ -30,6 +30,10 @@ body {
   margin-top: 28px;
 }
 
+.bottom {
+  margin-bottom: 10px;
+}
+
 .text-warning {
   color: #ECC31F;
 }
@@ -450,10 +454,11 @@ form label {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100px;
+    height: 150px;
     align-items: center;
     flex-direction: column;
-    background-color: #7379D1;
+    justify-content: space-evenly;
+    background-color: rgba(115, 121, 209, 0.815);
     opacity: 0;
     transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
@@ -462,6 +467,10 @@ form label {
     -o-transition: all .5s ease-in-out;
     visibility: hidden;
   }
+
+  /* nav ul li {
+    margin-bottom: 20px;
+  } */
 
   .menu-toggle {
     display: flex;

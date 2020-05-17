@@ -34,6 +34,10 @@ body {
   color: #ECC31F;
 }
 
+.center {
+  text-align: center;
+}
+
 .normal {
   font-weight: normal;
   font-size: 21px;
@@ -68,6 +72,100 @@ body {
   left: 5px;
   box-shadow: none;
 }
+
+nav {
+  height: 60px;
+  background-color: #7379D1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+nav .logo {
+  text-transform: uppercase;
+  font-weight: bolder;
+  /* margin-left: 100px; */
+}
+
+nav ul {
+  width: 500px;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav ul li:hover a {
+  color: #ECC31F;
+}
+
+.menu-toggle {
+  display: none;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.active {
+  color: #ECC31F;
+}
+
+.active:hover {
+  color: #fff;
+}
+
+input:-moz-read-only,
+textarea:-moz-read-only {
+  background: rgba(0, 0, 0, 0.1);
+  color: #666;
+}
+
+input:read-only,
+textarea:-moz-read-only {
+  background: rgba(0, 0, 0, 0.1);
+  color: #666;
+}
+
+input[type=submit] {
+  background-color: #7379D1;
+  color: #fff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-size: 18px;
+  font-weight: 900;
+  color: #807D7D;
+  margin-bottom: 15px;
+}
+
+.form-control {
+  width: 400px;
+  height: 35px;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  background: none;
+  border: 1px solid #807D7D;
+  border-radius: 5px;
+  outline: none;
+  color: #807D7D;
+  margin-bottom: 25px;
+  font-size: 14px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
 
 /* style untuk landing page */
 .box {
@@ -132,81 +230,8 @@ body {
   justify-content: center;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-form label {
-  font-size: 18px;
-  font-weight: 900;
-  color: #807D7D;
-  margin-bottom: 15px;
-}
-
-.form-control {
-  width: 400px;
-  height: 35px;
-  box-sizing: border-box;
-  padding: 5px 15px;
-  background: none;
-  border: 1px solid #807D7D;
-  border-radius: 5px;
-  outline: none;
-  color: #807D7D;
-  margin-bottom: 25px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-}
-
 /* style for beranda */
-nav {
-  height: 60px;
-  background-color: #7379D1;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: #fff;
-}
 
-nav .logo {
-  text-transform: uppercase;
-  font-weight: bolder;
-  /* margin-left: 100px; */
-}
-
-nav ul {
-  width: 500px;
-  display: flex;
-  list-style: none;
-  justify-content: space-evenly;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: inherit;
-}
-
-nav ul li:hover a {
-  color: #ECC31F;
-}
-
-.menu-toggle {
-  display: none;
-  height: 30px;
-  cursor: pointer;
-  position: relative;
-}
-
-.active {
-  color: #ECC31F;
-}
-
-.active:hover {
-  color: #fff;
-}
 
 .card {
   background-color: #fff;
@@ -259,33 +284,13 @@ nav ul li:hover a {
   color: #fff;
 }
 
-.table tr th:first-child {
-  width: 2%;
-}
-
-.table tr th:nth-child(2) {
-  width: 10%;
-}
-
-.table tr th:nth-child(3) {
-  width: 40%;
-}
-
-.table tr th:nth-child(4) {
-  width: 13%;
-}
-
-.table tr th:nth-child(5) {
-  width: 13%;
-}
-
-.table tr th:nth-child(6) {
-  width: 15%;
-}
-
 .table tr td {
   padding: 20px;
   border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.table tr td:first-child {
+  text-align: center;
 }
 
 .table tr:nth-child(odd) {
@@ -294,6 +299,48 @@ nav ul li:hover a {
 
 .table tr:nth-child(even):hover {
   background-color: rgba(0, 0, 0, 0.048);
+}
+
+/* style for tentang-saya */
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col {
+  width: 48%;
+}
+
+.card-body h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.card-body a.center {
+  margin: auto;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.column .card {
+  margin-bottom: 10px;
+}
+
+.nilai {
+  display: flex;
+  justify-content: center;
+}
+
+/* style for informasi pribadi */
+.card-body .form-control {
+  width: 100%;
 }
 
 /* animation */
@@ -438,5 +485,17 @@ nav ul li:hover a {
 
   .card-body {
     overflow: auto;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  textarea.form-control {
+    height: 75px;
   }
 }

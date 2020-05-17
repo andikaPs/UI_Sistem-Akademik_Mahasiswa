@@ -66,10 +66,10 @@ a.bg-warning {
   outline: none;
   border: 0;
   color: #FFFFFF;
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
   cursor: pointer;
 }

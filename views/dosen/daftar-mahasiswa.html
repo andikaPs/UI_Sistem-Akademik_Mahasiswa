@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="dIkaps">
-  <title>Beranda</title>
+  <title>Daftar Mahasiswa</title>
   <link rel="stylesheet" href="../../public/css/style.css">
 </head>
 
@@ -15,7 +15,7 @@
     <h3 class="logo">ubsi</h3>
 
     <ul>
-      <li><a href="beranda.html" class="active">Beranda</a></li>
+      <li><a href="../umum/beranda.html">Beranda</a></li>
       <!-- menu untuk mahasiswa -->
       <!-- <li><a href="../mahasiswa/jadwal.html">Jadwal Kuliah</a></li>
       <li><a href="../mahasiswa/tentang-saya.html">Tentang Saya</a></li> -->
@@ -43,38 +43,43 @@
     <div class="card">
       <div class="card-body">
         <h3>Universitas Bina Sarana Informatika</h3>
-        <p>Beranda</p>
+        <p>Daftar Mahasiswa Kelas : 12.2C.04</p>
       </div>
     </div>
     <!-- akhir card -->
 
-    <!-- awal list -->
-    <div class="list">
+    <!-- card untuk daftar mahasiswa -->
+    <div class="card">
+      <div class="card-body">
 
-      <div class="berita">
-        <div class="card">
-          <div class="card-body">
-            <h3>Update Jadwal UTS</h3>
-            <p>2020 - 05 - 15</p>
+        <table class="table">
+          <tr>
+            <th>No</th>
+            <th>NIM</th>
+            <th>Nama</th>
+            <th>Nilai UTS</th>
+            <th>Nilai UAS</th>
+            <th>Aksi</th>
+          </tr>
 
-            <a href="baca.html" class="btn top-28">Baca</a>
-          </div>
-        </div>
+          <tr>
+            <td>1</td>
+            <td>12191872</td>
+            <td>Andika Permana Sidiq</td>
+            <td>-</td>
+            <td>-</td>
+            <td>
+              <div class="row">
+                <a href="uts.html" class="btn">UTS</a>
+                <a href="uas.html" class="btn">UAS</a>
+                <a href="" class="btn bg-warning">Edit</a>
+              </div>
+            </td>
+          </tr>
+        </table>
       </div>
-      <div class="berita">
-        <div class="card">
-          <div class="card-body">
-            <h3>Update Jadwal UTS</h3>
-            <p>2020 - 05 - 15</p>
-
-            <a href="baca.html" class="btn top-28">Baca</a>
-          </div>
-        </div>
-      </div>
-
-
     </div>
-    <!-- akhir list -->
+    <!-- akhir card -->
   </div>
   <!-- akhir container -->
 

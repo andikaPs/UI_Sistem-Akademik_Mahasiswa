@@ -34,6 +34,14 @@ body {
   color: #ECC31F;
 }
 
+a.bg-danger {
+  background-color: #dc3545;
+}
+
+a.bg-warning {
+  background-color: #ffc107;
+}
+
 .center {
   text-align: center;
 }
@@ -48,9 +56,9 @@ body {
   height: 40px;
   display: flex;
   font-size: 15px;
-  background-color: #7379D1;
   justify-content: center;
   align-items: center;
+  background-color: #7379D1;
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 3px;
@@ -58,10 +66,10 @@ body {
   outline: none;
   border: 0;
   color: #FFFFFF;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
+  -webkit-border-radius: ;
+  -moz-border-radius: ;
+  -ms-border-radius: ;
+  -o-border-radius: ;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
   cursor: pointer;
 }
@@ -145,6 +153,7 @@ form label {
   font-size: 18px;
   font-weight: 900;
   color: #807D7D;
+  margin-top: 10px;
   margin-bottom: 15px;
 }
 
@@ -341,6 +350,15 @@ form label {
 /* style for informasi pribadi */
 .card-body .form-control {
   width: 100%;
+}
+
+/* style for daftar mahasiswa */
+.table tr td .row {
+  flex-direction: column;
+}
+
+.table tr td .row a {
+  margin: 5px auto;
 }
 
 /* animation */

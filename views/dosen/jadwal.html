@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="dIkaps">
-  <title>Nilai UTS</title>
+  <title>Jadwal Kuliah</title>
   <link rel="stylesheet" href="../../public/css/style.css">
 </head>
 
@@ -16,8 +16,16 @@
 
     <ul>
       <li><a href="../umum/beranda.html">Beranda</a></li>
-      <li><a href="jadwal.html">Jadwal Kuliah</a></li>
-      <li><a href="tentang-saya.html">Tentang Saya</a></li>
+      <!-- menu untuk mahasiswa -->
+      <!-- <li><a href="../mahasiswa/jadwal.html">Jadwal Kuliah</a></li>
+      <li><a href="../mahasiswa/tentang-saya.html">Tentang Saya</a></li> -->
+      <!-- end menu untuk mahasiswa -->
+
+      <!-- menu untuk dosen -->
+      <li><a href="../dosen/daftar-kelas.html">Daftar Kelas</a></li>
+      <li><a href="../dosen/jadwal.html" class="active">Jadwal Mengajar</a></li>
+      <li><a href="../dosen/tentang-saya.html">Tentang Saya</a></li>
+      <!-- akhir menu dosen -->
     </ul>
 
     <div class="menu-toggle">
@@ -35,48 +43,48 @@
     <div class="card">
       <div class="card-body">
         <h3>Universitas Bina Sarana Informatika</h3>
-        <p>Nilai UTS</p>
+        <p>Jadwal Kuliah</p>
       </div>
     </div>
     <!-- akhir card -->
 
-    <!-- card for nilai uts -->
+    <!-- card for table -->
     <div class="card">
       <div class="card-body">
+        <!-- awal tabel -->
         <table class="table">
           <tr>
             <th>No</th>
+            <th>Hari</th>
             <th>Mata Kuliah</th>
-            <th>Nilai</th>
+            <th>Jam</th>
+            <th>Ruangan</th>
+            <th>Kelas</th>
           </tr>
 
           <tr>
             <td>1</td>
+            <td>Senin</td>
             <td>Metode Perancang Program</td>
-            <td>80.5</td>
+            <td>11.40-14.10</td>
+            <td>R-305</td>
+            <td>12.2C.04</td>
           </tr>
 
           <tr>
             <td>2</td>
+            <td>Senin</td>
             <td>Aplikasi Basis Data</td>
-            <td>80.5</td>
+            <td>14.10-16.10</td>
+            <td>R-305</td>
+            <td>12.2C.04</td>
           </tr>
 
-          <tr>
-            <td>3</td>
-            <td>Struktur Data</td>
-            <td>80.5</td>
-          </tr>
-
-          <tr>
-            <td>4</td>
-            <td>Bahasa Inggris</td>
-            <td>80.5</td>
-          </tr>
         </table>
+        <!-- akhir tabel -->
       </div>
     </div>
-    <!-- end card for nilai uts -->
+    <!-- end card for table -->
 
 
   </div>

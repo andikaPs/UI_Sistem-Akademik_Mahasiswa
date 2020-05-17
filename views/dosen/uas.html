@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="dIkaps">
-  <title>Beranda</title>
+  <title>Input Nilai Mahasiswa</title>
   <link rel="stylesheet" href="../../public/css/style.css">
 </head>
 
@@ -43,38 +43,42 @@
     <div class="card">
       <div class="card-body">
         <h3>Universitas Bina Sarana Informatika</h3>
-        <p>Beranda</p>
+        <p>Input Nilai UAS Mahasiswa</p>
       </div>
     </div>
     <!-- akhir card -->
 
-    <!-- awal list -->
-    <div class="list">
-
-      <div class="berita">
-        <div class="card">
-          <div class="card-body">
-            <h3>Update Jadwal UTS</h3>
-            <p>2020 - 05 - 15</p>
-
-            <a href="baca.html" class="btn top-28">Baca</a>
-          </div>
+    <!-- card untuk daftar mahasiswa -->
+    <div class="card">
+      <div class="card-body">
+        <div class="row">
+          <a href="daftar-mahasiswa.html" class="btn">Kembali</a>
         </div>
+
+        <form method="POST" action="">
+          <!-- nama mahasiswa -->
+          <label for="mahasiswa">Nama Mahasiswa</label>
+          <input type="text" name="nama" id="mahasiswa" class="form-control" value="Andika Permana Sidiq" readonly>
+
+          <!-- mata kuliah -->
+          <label for="matkul">Mata Kuliah</label>
+          <select name="matkul" id="matkul" class="form-control">
+            <option>-Pilih-</option>
+            <option value="">Metode Perancang Program</option>
+            <option value="">Aplikasi Basis Data</option>
+            <option value="">Struktur Data</option>
+            <option value="">Bahasa Inggris</option>
+          </select>
+
+          <!-- nilai -->
+          <label for="nilai">Nilai</label>
+          <input type="number" name="nilai" id="nilai" class="form-control">
+
+          <input type="submit" value="Simpan" class="btn">
+        </form>
       </div>
-      <div class="berita">
-        <div class="card">
-          <div class="card-body">
-            <h3>Update Jadwal UTS</h3>
-            <p>2020 - 05 - 15</p>
-
-            <a href="baca.html" class="btn top-28">Baca</a>
-          </div>
-        </div>
-      </div>
-
-
     </div>
-    <!-- akhir list -->
+    <!-- akhir card -->
   </div>
   <!-- akhir container -->
 

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="dIkaps">
+  <title>Tentang Saya</title>
+  <link rel="stylesheet" href="../../public/css/style.css">
+</head>
+
+<body>
+  <!-- awal navbar -->
+  <nav>
+    <h3 class="logo">ubsi</h3>
+
+    <ul>
+      <li><a href="../umum/beranda.html">Beranda</a></li>
+      <!-- menu untuk mahasiswa -->
+      <!-- <li><a href="../mahasiswa/jadwal.html">Jadwal Kuliah</a></li>
+      <li><a href="../mahasiswa/tentang-saya.html">Tentang Saya</a></li> -->
+      <!-- end menu untuk mahasiswa -->
+
+      <!-- menu untuk dosen -->
+      <li><a href="../dosen/daftar-kelas.html">Daftar Kelas</a></li>
+      <li><a href="../dosen/jadwal.html">Jadwal Mengajar</a></li>
+      <li><a href="../dosen/tentang-saya.html" class="active">Tentang Saya</a></li>
+      <!-- akhir menu dosen -->
+    </ul>
+
+    <div class="menu-toggle">
+      <input type="checkbox">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  <!-- akhir navbar -->
+
+  <!-- awal container -->
+  <div class="container top-28">
+    <!-- awal card -->
+    <div class="card">
+      <div class="card-body">
+        <h3>Universitas Bina Sarana Informatika</h3>
+        <p>Tentang Saya</p>
+      </div>
+    </div>
+    <!-- akhir card -->
+
+    <!-- card for informasi pribadi -->
+    <div class="card">
+      <div class="card-body">
+
+        <form method="POST" action="">
+          <!-- kode dosen -->
+          <label for="kodeDosen">Kode Dosen</label>
+          <input type="text" name="kodeDosen" id="kodeDosen" class="form-control" value="IKK" readonly>
+
+          <!-- nama -->
+          <label for="nama">Nama</label>
+          <input type="text" name="nama" id="nama" class="form-control" value="Ibu Kita Kartini" readonly>
+
+          <!-- alamat -->
+          <label for="alamat">Alamat</label>
+          <textarea name="alamat" id="alamat" class="form-control" readonly>Jepara</textarea>
+
+          <!-- email -->
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" value="ibukartini@bsi.ac.id" readonly>
+
+          <!-- notel -->
+          <label for="notel">No Telephone</label>
+          <input type="text" name="notel" id="notel" class="form-control" value="085321xxxxxx" readonly>
+        </form>
+        <a href="edit-data_diri.html" class="btn">Edit Data</a>
+      </div>
+    </div>
+    <!-- end card for informasi pribadi -->
+
+
+
+  </div>
+  <!-- akhir container -->
+
+  <script src="../../public/js/script.js"></script>
+</body>
+
+</html>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="dIkaps">
-  <title>Daftar Mahasiswa</title>
+  <title>Daftar Jadwal</title>
   <link rel="stylesheet" href="../../public/css/style.css">
 </head>
 
@@ -32,9 +32,9 @@
       <li><a href="kelas.html">Kelas</a></li>
       <li><a href="jurusan.html">Jurusan</a></li>
       <li><a href="fakultas.html">Fakultas</a></li>
-      <li><a href="mahasiswa.html" class="active">Mahasiswa</a></li>
+      <li><a href="mahasiswa.html">Mahasiswa</a></li>
       <li><a href="dosen.html">Dosen</a></li>
-      <li><a href="jadwal.html">Jadwal</a></li>
+      <li><a href="jadwal.html" class="active">Jadwal</a></li>
       <li><a href="matkul.html">Mata Kuliah</a></li>
       <li><a href="tentang-saya.html">Tentang Saya</a></li>
       <!-- akhir menu admin -->
@@ -55,7 +55,7 @@
     <div class="card">
       <div class="card-body">
         <h3>Universitas Bina Sarana Informatika</h3>
-        <p>Mahasiswa</p>
+        <p>Jadwal</p>
       </div>
     </div>
     <!-- akhir card -->
@@ -64,29 +64,32 @@
     <div class="card">
       <div class="card-body">
         <div class="row">
-          <a href="tambah-mahasiswa.html" class="btn bottom">Tambah</a>
+          <a href="tambah-jadwal.html" class="btn bottom">Tambah</a>
         </div>
 
         <table class="table">
           <tr>
             <th>No</th>
-            <th>NIM</th>
-            <th>Nama</th>
+            <th>Mata Kuliah</th>
+            <th>Hari</th>
+            <th>Jam</th>
+            <th>Ruangan</th>
             <th>Kelas</th>
-            <th>Jurusan</th>
+            <th>Dosen</th>
             <th>Aksi</th>
           </tr>
 
           <tr>
             <td>1</td>
-            <td>12191872</td>
-            <td>Andika Permana Sidiq</td>
+            <td>Web Programming I</td>
+            <td>Jumat</td>
+            <td>14.10 - 17.30</td>
+            <td>R-304</td>
             <td>12.2C.04</td>
-            <td>Sistem Informasi</td>
+            <td>Ibu Kita Kartini</td>
             <td>
               <div class="row">
-                <a href="edit-mahasiswa.html" class="btn bg-warning">Edit</a>
-                <a href="detail-mahasiswa.html" class="btn">Detail</a>
+                <a href="edit-jadwal.html" class="btn bg-warning">Edit</a>
                 <a href="#" class="btn bg-danger">Hapus</a>
               </div>
             </td>

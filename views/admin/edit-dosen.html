@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="dIkaps">
-  <title>Daftar Mahasiswa</title>
+  <title>Edit Dosen</title>
   <link rel="stylesheet" href="../../public/css/style.css">
 </head>
 
@@ -32,7 +32,7 @@
       <li><a href="kelas.html">Kelas</a></li>
       <li><a href="jurusan.html">Jurusan</a></li>
       <li><a href="fakultas.html">Fakultas</a></li>
-      <li><a href="mahasiswa.html" class="active">Mahasiswa</a></li>
+      <li><a href="mahasiswa.html">Mahasiswa</a></li>
       <li><a href="dosen.html">Dosen</a></li>
       <li><a href="jadwal.html">Jadwal</a></li>
       <li><a href="matkul.html">Mata Kuliah</a></li>
@@ -55,7 +55,7 @@
     <div class="card">
       <div class="card-body">
         <h3>Universitas Bina Sarana Informatika</h3>
-        <p>Mahasiswa</p>
+        <p>Edit Dosen</p>
       </div>
     </div>
     <!-- akhir card -->
@@ -64,34 +64,41 @@
     <div class="card">
       <div class="card-body">
         <div class="row">
-          <a href="tambah-mahasiswa.html" class="btn bottom">Tambah</a>
+          <a href="dosen.html" class="btn bottom">Kembali</a>
         </div>
 
-        <table class="table">
-          <tr>
-            <th>No</th>
-            <th>NIM</th>
-            <th>Nama</th>
-            <th>Kelas</th>
-            <th>Jurusan</th>
-            <th>Aksi</th>
-          </tr>
+        <form method="POST" action="">
+          <!-- nim -->
+          <label for="NIM">Kode Dosen</label>
+          <input type="text" name="nim" id="NIM" class="form-control" value="IKK">
+          <!-- end nim -->
 
-          <tr>
-            <td>1</td>
-            <td>12191872</td>
-            <td>Andika Permana Sidiq</td>
-            <td>12.2C.04</td>
-            <td>Sistem Informasi</td>
-            <td>
-              <div class="row">
-                <a href="edit-mahasiswa.html" class="btn bg-warning">Edit</a>
-                <a href="detail-mahasiswa.html" class="btn">Detail</a>
-                <a href="#" class="btn bg-danger">Hapus</a>
-              </div>
-            </td>
-          </tr>
-        </table>
+          <!-- password -->
+          <label for="pwd">Password</label>
+          <input type="text" name="pwd" id="pwd" class="form-control" value="IKK">
+
+          <!-- nama -->
+          <label for="name">Nama</label>
+          <input type="text" name="nama" id="name" class="form-control" value="Ibu Kita Kartini">
+          <!-- end nama -->
+
+          <!-- alamat -->
+          <label for="alamat">Alamat</label>
+          <textarea name="alamat" id="alamat" class="form-control" style="height: 150px;">Jepara</textarea>
+          <!-- alamat -->
+
+          <!-- email -->
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" value="ibukartini@gmail.com">
+          <!-- end email -->
+
+          <!-- no telephone -->
+          <label for="nomor">No Telephone</label>
+          <input type="number" name="notel" id="nomor" class=" form-control" value="088xxx">
+          <!-- end no telephone -->
+
+          <input type="submit" value="Simpan" class="btn">
+        </form>
       </div>
     </div>
     <!-- akhir card daftar berita -->

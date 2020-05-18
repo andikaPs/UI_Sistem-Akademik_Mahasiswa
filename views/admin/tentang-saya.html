@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="dIkaps">
-  <title>Edit Kelas</title>
+  <title>Tentang Saya</title>
   <link rel="stylesheet" href="../../public/css/style.css">
 </head>
 
@@ -36,7 +36,7 @@
       <li><a href="dosen.html">Dosen</a></li>
       <li><a href="jadwal.html">Jadwal</a></li>
       <li><a href="matkul.html">Mata Kuliah</a></li>
-      <li><a href="tentang-saya.html">Tentang Saya</a></li>
+      <li><a href="tentang-saya.html" class="active">Tentang Saya</a></li>
       <!-- akhir menu admin -->
     </ul>
 
@@ -55,28 +55,60 @@
     <div class="card">
       <div class="card-body">
         <h3>Universitas Bina Sarana Informatika</h3>
-        <p>Edit Kelas</p>
+        <p>Tentang Saya</p>
       </div>
     </div>
     <!-- akhir card -->
 
-    <!-- card untuk daftar berita -->
-    <div class="card">
-      <div class="card-body">
-        <div class="row">
-          <a href="kelas.html" class="btn bottom">Kembali</a>
+    <!-- row start -->
+    <div class="row">
+      <!-- col start -->
+      <div class="col">
+        <!-- card for informasi pribadi -->
+        <div class="card">
+          <div class="card-body">
+
+            <form method="POST" action="">
+              <!-- username -->
+              <label for="username">Username</label>
+              <input type="text" name="username" id="username" class="form-control" value="Admin" readonly>
+
+              <!-- password -->
+              <label for="password">Password</label>
+              <input type="text" name="password" id="password" class="form-control" value="admin" readonly>
+
+              <!-- nama -->
+              <label for="nama">Nama</label>
+              <input type="text" name="nama" id="nama" class="form-control" value="Andika Permana SIdiq" readonly>
+
+              <!-- alamat -->
+              <label for="alamat">Alamat</label>
+              <textarea name="alamat" id="alamat" class="form-control" readonly>Jepara</textarea>
+
+              <!-- email -->
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" class="form-control" value="ibukartini@bsi.ac.id" readonly>
+
+              <!-- notel -->
+              <label for="notel">No Telephone</label>
+              <input type="text" name="notel" id="notel" class="form-control" value="085321xxxxxx" readonly>
+            </form>
+            <a href="edit-data_diri.html" class="btn">Edit Data</a>
+          </div>
         </div>
+        <!-- end card for informasi pribadi -->
+      </div>
+      <!-- col end -->
 
-        <form method="POST" action="">
-          <!-- nama kelas -->
-          <label for="kelas">Nama Kelas</label>
-          <input type="text" name="kelas" id="kelas" class="form-control">
-
-          <input type="submit" value="simpan" class="btn">
-        </form>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <a href="../../index.html" class="btn center">logout</a>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- akhir card daftar berita -->
+    <!-- row end -->
   </div>
   <!-- akhir container -->
 
